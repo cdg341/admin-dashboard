@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #e2e8f0;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 1fr 3fr;
+}
+
+.sidebar {
+  grid-row: 1/3;
+  background-color: #0ea5e9;
+  padding: 10px;
+}
+
+.header {
+  display: grid;
+  grid-column: 2/3;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+  box-shadow: 0 0 8px gray;
+}
+
+button {
+  background-color: #0ea5e9;
+  padding: 5px 25px;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: none;
+}
+
+.sidebar ul {
+  margin-top: 50px;
+}
+
+.sidebar li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr;
+  padding-left: 30px;
+  gap: 15px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.card-container div {
+  background-color: white;
+  height: 200px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px gray;
+  margin-top: 10px;
+}
+
+.card-container h5,
+p {
+  color: black;
+}
+
+.news {
+  margin-top: 30px;
+}
+
+.announcements,
+.trending {
+  color: black;
+  background-color: white;
+  height: 200px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px gray;
+}
