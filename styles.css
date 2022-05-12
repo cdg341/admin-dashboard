@@ -15,21 +15,13 @@ body {
   height: 100vh;
   display: grid;
   grid-template-columns: 1fr 6fr;
-  grid-template-rows: 1fr 3fr;
+  grid-template-rows: 0.7fr 3fr;
 }
 
 .logo {
   font-size: 1.8rem;
   color: white;
   font-weight: bold;
-}
-
-.sidebar {
-  grid-row: 1/3;
-  background-color: #0ea5e9;
-  padding: 30px;
-  min-width: 250px;
-  font-size: 1.2rem;
 }
 
 .header {
@@ -48,6 +40,7 @@ body {
   grid-template-columns: 0.5fr 1fr;
   align-items: center;
   gap: 10px;
+  max-width: 650px;
 }
 
 .search input {
@@ -122,14 +115,34 @@ button {
   font-weight: bold;
 }
 
+.sidebar {
+  grid-row: 1/3;
+  background-color: #0ea5e9;
+  padding: 30px;
+  min-width: 250px;
+  font-size: 1.2rem;
+}
+
 .sidebar ul {
   margin-top: 50px;
+  vertical-align: middle;
+}
+
+.sidebar ul img {
+  display: inline;
 }
 
 .sidebar li {
   margin-top: 10px;
   list-style: none;
   color: white;
+  padding: 10px;
+  font-size: 1.3rem;
+}
+
+.sidebar li img {
+  position: relative;
+  top: 4px;
 }
 
 .projects {
@@ -201,8 +214,24 @@ p {
   font-size: 1.3rem;
   width: 2.8rem;
   padding: 10px;
-  background-color: lightcoral;
+  color: white;
   border-radius: 50%;
+}
+
+.profiles div:nth-child(1) {
+  background-color: lightcoral;
+}
+
+.profiles div:nth-child(2) {
+  background-color: midnightblue;
+}
+
+.profiles div:nth-child(3) {
+  background-color: purple;
+}
+
+.profiles div:nth-child(4) {
+  background-color: gray;
 }
 
 .userHandle {
